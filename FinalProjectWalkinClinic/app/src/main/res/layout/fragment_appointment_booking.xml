@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.appointmentbooking.AppointmentBookingFragment">
+
+    <TextView
+        android:id="@+id/patientText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Patient Information"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="390dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <EditText
+        android:id="@+id/edDOB"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="DOB (YYYY/MM/DD)"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edAvailability"
+        android:layout_width="388dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="392dp"
+        android:hint="What is your availability for the appointment?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="388dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="292dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="390dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="452dp"
+        android:text="Continue with appointment type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <Button
+        android:id="@+id/btnNextVaccine"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="#8D52E1"
+        android:text="Vaccine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <Button
+        android:id="@+id/btnNextTherapy"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="#8D52E1"
+        android:text="Therapy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+    <EditText
+        android:id="@+id/edGender"
+        android:layout_width="182dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

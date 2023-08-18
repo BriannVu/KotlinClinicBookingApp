@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_appointment_booking">
+
+    <fragment
+        android:id="@+id/about"
+        android:name="project.st991579193.baonam.ui.appointmentbooking.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/help"
+        android:name="project.st991579193.baonam.ui.appointmentbooking.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_appointment_booking"
+        android:name="project.st991579193.baonam.ui.appointmentbooking.AppointmentBookingFragment"
+        android:label="@string/menu_appointment_booking"
+        tools:layout="@layout/fragment_appointment_booking" >
+        <action
+        android:id="@+id/action_nav_appointment_booking_to_nav_appointment_therapy"
+        app:destination="@id/nav_appointment_therapy" />
+        <action
+            android:id="@+id/action_nav_appointment_booking_to_nav_appointment_vaccine"
+            app:destination="@id/nav_appointment_vaccine" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_appointment_therapy"
+        android:name="project.st991579193.baonam.ui.appointmentbooking.AppointmentTherapyFragment"
+        android:label="Therapy Appointment"
+        tools:layout="@layout/fragment_appointment_therapy" />
+
+    <fragment
+        android:id="@+id/nav_appointment_vaccine"
+        android:name="project.st991579193.baonam.ui.appointmentbooking.AppointmentVaccineFragment"
+        android:label="Vaccine Booking"
+        tools:layout="@layout/fragment_appointment_vaccine" />
+
+    <fragment
+        android:id="@+id/nav_management"
+        android:name="project.st991579193.baonam.ui.management.ManagementFragment"
+        android:label="@string/menu_management"
+        tools:layout="@layout/fragment_management" >
+        <action
+            android:id="@+id/action_nav_management_to_nav_management_list"
+            app:destination="@id/nav_management_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_management_list"
+        android:name="project.st991579193.baonam.ui.management.ManagementListFragment"
+        android:label="Admin Management"
+        tools:layout="@layout/fragment_management_list" >
+        <action
+            android:id="@+id/action_nav_management_list_to_nav_management_user_list"
+            app:destination="@id/nav_management_user_list" />
+        <action
+            android:id="@+id/action_nav_management_list_to_nav_management_appointment_list"
+            app:destination="@id/nav_management_appointment_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_management_appointment_list"
+        android:name="project.st991579193.baonam.ui.management.AppointmentListFragment"
+        android:label="Appointments List"
+        tools:layout="@layout/fragment_appointment_list" />
+
+    <fragment
+        android:id="@+id/nav_management_user_list"
+        android:name="project.st991579193.baonam.ui.management.UserListFragment"
+        android:label="Users List"
+        tools:layout="@layout/fragment_user_list" />
+</navigation>
